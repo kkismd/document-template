@@ -1,0 +1,30 @@
+@startuml
+left to right direction
+
+rectangle 要求 {
+actor 利用者
+note  "暑さ寒さを表明したい" as N1
+note  "他の人の体感温度を参考にして\n空調を調節したい" as N2
+
+actor 担当者
+note  "パスワードを定期的に変更したい" as N3
+note  "フロアレイアウトの変更に\n合わせてマップを更新したい" as N4
+
+}
+利用者 -- N1
+利用者 -- N2
+担当者 -- N3
+担当者 -- N4
+
+rectangle 要件 {
+note "Webからフロアマップの任意の位置に\n寒暖情報を登録できる" as R1
+note "Webからフロアマップに登録された\n寒暖情報の分布を確認できる" as R2
+note "Webからパスワードを変更できる" as R3
+note "Webからフロアマップの画像を\nアップロードできる" as R4
+}
+N1 -- R1
+N2 -- R2
+N3 -- R3
+N4 -- R4
+
+@enduml

@@ -1,0 +1,27 @@
+font:
+  catalog:
+    KaiGen Gothic JP:
+      normal: KaiGenGothicJP-Regular.ttf
+      bold: KaiGenGothicJP-Bold.ttf
+      italic: KaiGenGothicJP-Regular-Italic.ttf
+      bold_italic: KaiGenGothicJP-Bold-Italic.ttf
+    Roboto Mono:
+      normal: RobotoMono-Regular.ttf
+      bold: RobotoMono-Bold.ttf
+      italic: RobotoMono-Italic.ttf
+      bold_italic: RobotoMono-BoldItalic.ttf
+    Noto Emoji: notoemoji-subset.ttf
+  fallbacks:
+    - KaiGen Gothic JP
+    - Roboto Mono
+    - Noto Emoji
+base:
+  font-family: KaiGen Gothic JP
+heading:
+  font-family: $base-font-family
+abstract:
+  title:
+    font-family: $heading-font-family
+sidebar:
+  title:
+    font-family: $heading-font-family

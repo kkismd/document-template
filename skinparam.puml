@@ -1,0 +1,80 @@
+skinparam state {
+  BackgroundColor White
+  BorderColor SteelBlue
+}
+
+skinparam note {
+  BorderColor Black
+}
+
+skinparam object {
+  BackgroundColor White
+  BorderColor SteelBlue
+}
+
+skinparam class {
+  BackgroundColor White
+  BorderColor SteelBlue
+}
+
+skinparam sequence {
+  ParticipantBackgroundColor White
+  ParticipantBorderColor SteelBlue
+}
+
+skinparam usecase {
+  BackgroundColor White
+  BorderColor SteelBlue
+}
+
+skinparam activity {
+  BackgroundColor white
+  BorderColor SteelBlue
+  DiamondBackgroundColor white
+  DiamondBorderColor SteelBlue
+}
+
+skinparam frame {
+  BackgroundColor white
+  BorderColor SteelBlue
+}
+
+skinparam {
+  defaultFontName M+ 1p Fallback
+
+  ActorBackgroundColor White
+  ActorBorderColor SteelBlue
+  AgentBackgroundColor White
+  AgentBorderColor SteelBlue
+  noteBackgroundColor LightYellow
+
+  EntityBackgroundColor White
+  EntityBorderColor SteelBlue
+
+  BoundaryBackgroundColor White
+  BoundaryBorderColor SteelBlue
+
+  InterfaceBackgroundColor White
+  InterfaceBorderColor SteelBlue
+
+  AgentBackgroundColor White
+  AgentBorderColor SteelBlue
+
+  ControlBackgroundColor White
+  ControlBorderColor SteelBlue
+
+  NodeBackgroundColor White
+  NodeBorderColor SteelBlue
+
+  ComponentBackgroundColor White
+  ComponentBorderColor SteelBlue
+
+  FileBackgroundColor White
+  FileBorderColor SteelBlue
+
+  CloudBackgroundColor White
+  CloudBorderColor SteelBlue
+
+  CollectionsBackgroundColor white
+  CollectionsBorderColor SteelBlue
+}

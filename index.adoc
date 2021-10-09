@@ -1,0 +1,62 @@
+:lang: ja
+:doctype: book
+:toc: left
+:toc-title: 目次
+:sectnums:
+:chapter-label:
+:icons: font
+:source-highlighter: coderay
+:example-caption: 例
+:table-caption: 表
+:figure-caption: 図
+:author: Free Group
+:revnumber: 1.0
+:revdate: 2021/10/01
+:plantuml-config: skinparam.puml
+:plantuml-format: svg
+
+= 室温共有システム せつでんくん: 要件定義書
+
+== 背景・目的
+
+フロア内の寒暖情報の登録、空調の設定変更、フロアマップの管理をシステムの業務スコープとする。
+
+* 利用者による暑い、寒いの情報登録を行う「体感室温登録業務」
+* 空調の温度設定などを変更する「空調変更業務」
+* 管理者によるフロアマップの登録・変更を行う「フロアマップ管理業務」
+
+.ビジネスコンテキスト
+[plantuml]
+----
+include::business-context.puml[]
+----
+
+
+システム化の目的は下記のとおり。
+
+.システムコンテキスト
+[plantuml]
+----
+include::system-context.puml[]
+----
+
+== 機能要件
+
+ヒアリングで出てきた要求事項から、実現すべき重要な要件を下記のように設定した。
+
+.要求モデル
+[plantuml]
+----
+include::requirement-model.puml[]
+----
+
+== 情報モデル
+
+.情報モデル
+[plantuml]
+----
+include::info-model.puml[]
+----
+
+== 非機能要件
+

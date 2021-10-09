@@ -1,0 +1,16 @@
+extends:
+  - default
+  - ./KaiGenGothicJP-theme.yml
+page:
+  layout: portrait
+footer:
+  recto:
+    right:
+      content:
+    center:
+      content: '{page-number}'
+  verso:
+    left:
+      content:
+    center:
+      content: $footer_recto_center_content
