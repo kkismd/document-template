@@ -38,12 +38,13 @@ skinparam frame {
   BackgroundColor white
   BorderColor SteelBlue
 }
-
+skinparam actor {
+  BackgroundColor White
+  BorderColor SteelBlue
+}
 skinparam {
-  defaultFontName M+ 1p Fallback
+  defaultFontName KaiGen Gothic JP
 
-  ActorBackgroundColor White
-  ActorBorderColor SteelBlue
   AgentBackgroundColor White
   AgentBorderColor SteelBlue
   noteBackgroundColor LightYellow

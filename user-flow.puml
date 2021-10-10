@@ -1,0 +1,14 @@
+@startuml
+
+start
+:室温に暑さ（寒さ）を感じる;
+:フロアマップを確認する;
+note right
+(UC) 体感室温と空調設定を確認する
+end note
+if (他の人も暑い（寒い）と言っている？) then (yes)
+ :空調の温度設定を変える;
+endif
+
+stop
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+
+actor 担当者
+usecase "フロアマップ\n追加・変更・削除" as フロアマップ管理
+usecase 認証情報更新
+entity フロアマップ
+entity 認証情報
+
+note bottom of フロアマップ管理
+フロアマップを追加・削除すると、
+対応する認証情報も同時に追加・
+削除される
+end note
+
+担当者 -- フロアマップ管理
+フロアマップ管理 -- フロアマップ
+フロアマップ管理 ..> 認証情報
+担当者 -- 認証情報更新
+認証情報更新 -- 認証情報
+
+@enduml

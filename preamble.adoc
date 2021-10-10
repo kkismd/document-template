@@ -1,0 +1,15 @@
+:lang: ja
+:doctype: book
+:toc: left
+:toc-title: 目次
+:sectnums:
+:chapter-label:
+:icons: font
+:source-highlighter: coderay
+:table-caption: 表
+:figure-caption: 図
+:author: Free Group
+:revnumber: 1.0
+:revdate: 2021/10/01
+:plantuml-config: skinparam.puml
+:plantuml-format: svg

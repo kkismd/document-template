@@ -6,10 +6,12 @@ ASCIIDOCTOR = $(DOCKER_RUN) asciidoctor-pdf $(REQUIRE) $(ARGS)
 
 all: index.pdf
 
-index.pdf: index.adoc
+index.pdf: index.adoc preamble.adoc \
+   admin-buc.puml business-context.puml info-model.puml requirement-model.puml \
+   skinparam.puml system-context.puml user-buc.puml user-flow.puml user-scene.puml admin-flow.puml
 
-%.pdf: %.adoc
-	$(ASCIIDOCTOR) -o $@ $<
+.PHONY: setup
+setup: fonts bin
 
 .PHONY: fonts
 fonts:
@@ -23,3 +25,6 @@ clean:
 .PHONY: bin
 bin:
 	(cd bin && ./download.sh)
+
+%.pdf: %.adoc
+	$(ASCIIDOCTOR) -o $@ $<

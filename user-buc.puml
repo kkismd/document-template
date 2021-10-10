@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+
+actor 利用者
+usecase 体感室温表明
+usecase 空調設定変更
+entity 体感室温
+entity フロアマップ
+component 空調
+
+利用者 -- 体感室温表明
+体感室温表明 -- 体感室温
+体感室温表明 -- フロアマップ
+利用者 -- 空調設定変更
+空調設定変更 -- フロアマップ
+空調設定変更 -- 体感室温
+空調設定変更 -- 空調
+
+@enduml
