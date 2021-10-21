@@ -5,7 +5,6 @@ skinparam actorStyle awesome
 rectangle 企業 {
   actor 利用者
   usecase  体感室温表明
-  entity 寒暖情報
 
   rectangle 総務部 {
     actor 担当者
@@ -13,15 +12,15 @@ rectangle 企業 {
   usecase フロアマップ管理
   usecase 認証情報管理
 
-  collections 空調
+  component 空調
   usecase 空調変更
 }
 
 利用者 -- 体感室温表明
-体感室温表明 -- 寒暖情報
 担当者 -- フロアマップ管理
 担当者 -- 認証情報管理
 
+担当者 -- 空調変更
 利用者 -- 空調変更
 空調変更 -- 空調
 

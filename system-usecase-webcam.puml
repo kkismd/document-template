@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+
+usecase 空調設定確認
+boundary Webカメラ
+control タイマー
+component 空調リモコン
+
+legend
+Webカメラが1分おきに空調リモ
+コンの液晶部分を撮影し、画像を
+サーバーにアップロードする
+end legend
+
+タイマー - 空調設定確認 : 定期的に実行 >
+空調設定確認 -- Webカメラ
+'Webカメラ - 空調リモコン : 撮影する >
+空調リモコン - Webカメラ : 撮影する <
+
+note left of 空調設定確認: (UC) 空調リモコン画像\nを記録する
+
+@enduml
