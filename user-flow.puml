@@ -8,6 +8,8 @@ note right
 end note
 if (他の人も暑い（寒い）と言っている？) then (yes)
  :空調の温度設定を変える;
+else (no)
+ :しばらく様子を見る;
 endif
 
 stop

@@ -1,3 +1,5 @@
 *.ttf
 *.jar
 plantuml-images/*.svg
+.asciidoctor/
+.idea/
