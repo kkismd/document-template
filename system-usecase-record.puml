@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+
+usecase 空調設定記録
+control タイマー
+control 記録バッチ
+boundary Webカメラ
+component 空調リモコン
+entity 空調設定内容
+
+空調設定記録 . タイマー
+タイマー -> 記録バッチ : 1. 起動する
+記録バッチ --> Webカメラ : 2. 操作する
+Webカメラ --> 空調リモコン : 3. 撮影する
+記録バッチ --> 空調設定内容 : 4. 記録する
+
+@enduml
