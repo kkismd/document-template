@@ -2,15 +2,15 @@
 left to right direction
 
 actor 利用者
-usecase 体感室温表明
-usecase 空調設定変更
+usecase/ 体感室温表明
+usecase/ 空調設定変更
 together {
 entity 体感室温
 entity フロアマップ
 }
 entity 空調設定記録
 component 空調リモコン
-usecase 空調設定確認
+usecase/ 空調設定確認
 boundary Webカメラ
 
 利用者 -- 体感室温表明

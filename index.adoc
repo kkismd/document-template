@@ -74,6 +74,9 @@ include::system-usecase-webcam.puml[]
 
 ==== 体感室温表明のユースケース
 
+.フロアマップ画面のサンプル
+image::images/sceen.svg[]
+
 主要シナリオ::
 . 「せつでんくん」ログイン画面にアクセスする
 . フロア名とパスワードを入力してログインボタンを押す
@@ -189,9 +192,7 @@ include::admin-usecase-edit.puml[]
 .フロアマップ削除のユースケース詳細
 [plantuml]
 ----
-@startuml
-
-@enduml
+include::admin-usecase-delete.puml[]
 ----
 
 == ビジネスルール
